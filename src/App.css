@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
-}
+/* Purple: 320853 Yellow: FFF000 */
+/* Orange: FF9600 */
+/* Light purple: 4B006E */
+/* Dreamwave purple: 9619FA */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.shimmer {
   color: white;
+  display:inline-block;
+  mask:linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/400% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 2.5s infinite;
 }
 
-.App-link {
-  color: #61dafb;
+.RoundHeaderLeft {
+    width: 400px;
+    height: 82px;
+    background: linear-gradient(to right, #FF9600, #FF9600, #FF960000);
+    transform: skewX(-12deg);
+    margin-left: -15px;
+    padding-left: 50px;
+    color: #320853;
+    text-shadow: #FFF000 3px 3px 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.RoundHeaderLeft strong {
+    color: #FFF000;
+    text-shadow: none;
+}
+
+.SubRoundHeaderLeft {
+    width: 350px;
+    height: 58px;
+    background: linear-gradient(to right, #320853, #320853,#32085300);
+    transform: skewX(-12deg);
+    margin-left: -15px;
+    padding-left: 50px;
+    color: #9619FA;
+}
+
+.SubRoundHeaderLeft strong {
+    color: #FFF000;
+}
+
+
+
+.RoundHeaderRightBlue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height: 70px;
+    padding-bottom: 5px;
+    background: linear-gradient(to left, #FF9600, #FF9600, #FF960000);
+    transform: skewX(-12deg);
+    margin-right: -18px;
+    padding-right: 30px;
+    padding-left: 100px;
+    color: #224374;
+    text-transform: uppercase;
+}
+
+.RoundHeaderRightYellow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  height: 70px;
+  background: linear-gradient(to left, #4a0069, #4a0069, #32085300);
+  transform: skewX(-12deg);
+  margin-right: -18px;
+  padding-right: 30px;
+  padding-left: 100px;
+  color: #FFF000;
+  text-transform: uppercase;
+}
+
+.RightTextStraight {
+  transform: skewX(-12deg);
+}
+
+.BottomRightTag {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  padding-right: 25px;
+  margin-right: -6px;
+
+  background-color: #4a0069;
+  transform: skewX(-12deg);
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes shimmer {
+  100% {
+    -webkit-mask-position:left;
   }
 }
