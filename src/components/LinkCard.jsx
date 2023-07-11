@@ -18,7 +18,7 @@ function LinkCard() {
 
     return (
         <Box className="BottomRightTag shimmer" style={{
-            bottom: '0',
+            bottom: '250px',
             right: adOpen ? '0' : '-300px',
         }}>
         <LinkOutlined style={{
