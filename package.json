@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "echo \"You do not have to build this. Please use npm start\" && exit 1"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
